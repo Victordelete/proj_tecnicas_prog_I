@@ -5,7 +5,7 @@ Script para realizar o processamento dos dados para a staging area
 - persistências dos dados na staging area.
 """
 import itertools
-from SCRIPTS.globals import *
+from globals import *
 
 def carrega_do_datalake() -> pd.DataFrame:
     """
