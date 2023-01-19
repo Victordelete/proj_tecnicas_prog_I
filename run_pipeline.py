@@ -2,20 +2,22 @@
     Script utilizado para executar o pipeline de processamento
 """
 
-from SCRIPTS.globals import *
+from globals import *
 
-########################
-print("Inicio pipeline")
+#########################
+#INSERCAO DOS DADOS DISPONIVEIS
+print(f'{dt.now()} [INFO] Iniciando ingestão dos dados.')
+os.system('python "' + os.path.join(root_path, data_ingestion) + '"')
 
-print("Limpeza dos dados")
-#chamar o módulo de limpeza dos dados recebidos
-df = pd.read_csv(datalake_file, low_memory=False)
-df = df.replace(" ",np.nan)
-print(df.isna().sum())
+#########################
+#PROCESSAMENTO DOS DADOS
+print(f'{dt.now()} [INFO] Iniciando processamento dos dados.')
+os.system('python "' + os.path.join(root_path, data_processing) + '"')
 
+#########################
+#DATALAKE
+print(f'{dt.now()} [INFO] Iniciando atualização do datalake.')
 
-print("Processamento dos dados")
-#chamar o módulo de processamento
-
-print("Analise dos dados")
-#chamar o módulo de analise do dado recebido
+#########################
+#VISUALIZAÇÃO DOS DADOS
+print(f'{dt.now()} [INFO] Iniciando criação de visualização dos dados.')
