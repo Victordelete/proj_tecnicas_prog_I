@@ -15,7 +15,7 @@ print(f'{dt.now()} [INFO] Iniciando processamento dos dados.')
 os.system('python "' + os.path.join(ROOT_PATH, DATA_PROCESSING) + '"')
 
 #########################
-#PROCESSAMENTO DOS DADOS
+#ANALISE DOS DADOS
 print(f'{dt.now()} [INFO] Iniciando processamento dos dados.')
 os.system('python "' + os.path.join(ROOT_PATH, DATA_ANALYSIS) + '"')
 
