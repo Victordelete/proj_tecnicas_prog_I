@@ -10,9 +10,8 @@ from globals import *
 #########################
 #funcoes de limpeza de dados
 def limpa_dados() -> pd.DataFrame:
-    df = pd.read_csv(datalake_file, low_memory=False)
+    df = pd.read_csv(DATALAKE_FILE, low_memory=False)
     df = df.replace(" ",np.nan)
-    #print(df.isna().sum())
     return df
 
 
@@ -20,6 +19,5 @@ def limpa_dados() -> pd.DataFrame:
 
 if __name__ == '__main__':
 
-    #carregar os dados do datalake
     data = limpa_dados()
     print(data.head())

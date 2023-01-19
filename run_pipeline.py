@@ -7,12 +7,12 @@ from globals import *
 #########################
 #INSERCAO DOS DADOS DISPONIVEIS
 print(f'{dt.now()} [INFO] Iniciando ingestão dos dados.')
-os.system('python "' + os.path.join(root_path, data_ingestion) + '"')
+os.system('python "' + os.path.join(ROOT_PATH, DATA_INGESTION) + '"')
 
 #########################
 #PROCESSAMENTO DOS DADOS
 print(f'{dt.now()} [INFO] Iniciando processamento dos dados.')
-os.system('python "' + os.path.join(root_path, data_processing) + '"')
+os.system('python "' + os.path.join(ROOT_PATH, DATA_INGESTION) + '"')
 
 #########################
 #DATALAKE
