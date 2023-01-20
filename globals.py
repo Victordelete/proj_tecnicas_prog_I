@@ -1,5 +1,7 @@
 """
     Script de configuração geral
+
+    Source do Database: https://www.kaggle.com/datasets/thedevastator/u-s-fdic-insured-banks-and-financial-institution
 """
 
 import os
