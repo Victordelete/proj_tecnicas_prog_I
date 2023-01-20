@@ -20,9 +20,7 @@ print(f'{dt.now()} [INFO] Iniciando processamento dos dados.')
 os.system('python "' + os.path.join(ROOT_PATH, DATA_ANALYSIS) + '"')
 
 #########################
-#DATALAKE
-#print(f'{dt.now()} [INFO] Iniciando atualização do datalake.')
-
-#########################
-#VISUALIZAÇÃO DOS DADOS
-#print(f'{dt.now()} [INFO] Iniciando criação de visualização dos dados.')
+#APRESENTACAO
+print(f'{dt.now()} [INFO] Iniciando apresentacao da analise.')
+#os.system('python "' + os.path.join(ROOT_PATH, DATA_APRESENTATION) + '"')
+os.system('jupyter notebook "' + os.path.join(ROOT_PATH, DATA_APRESENTATION) + '"')

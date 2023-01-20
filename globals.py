@@ -26,13 +26,9 @@ DATA_PROCESSING = "data_processing.py"
 
 ###############################################
 #analise dos dados
-DATA_ANALYSIS = "dataset_analysis.py"
+DATA_ANALYSIS = "data_analysis.py"
+DATA_APRESENTATION = "data_analysis.ipynb"
 
 ###############################################
 #dados de origem
 DATALAKE_FILE = "dataset_kaggle.com\Federal_Deposit_Insurance_Corporation_FDIC_Insured_Banks.csv"
-
-
-###############################################
-#definições - staging area
-STAGING_AREA = 'dataset_kaggle.com\staging_data.csv'
