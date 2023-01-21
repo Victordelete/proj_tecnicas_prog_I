@@ -10,9 +10,9 @@ Neste é desenvolvido o tratamento de dados para a base de dados pública:
 
 Desenvolvedores responsáveis pelo desenvolvimento:
 
-- Clever
-- Gustavo
-- Victor Hugo 
+- [Cleverson Guandalin](https://github.com/CleverGnd)
+- [Gustavo Guimaraes Brandão](https://github.com/GuhBrando)
+- [Victor Hugo Marques Vieira](https://github.com/Victordelete)
 
 ## About this file
 
